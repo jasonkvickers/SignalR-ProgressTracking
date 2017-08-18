@@ -1,0 +1,120 @@
+﻿@using ContentModels = Umbraco.Web.PublishedContentModels;
+@using Umbraco.Core
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = null;
+
+    // Get basic design settings from the homepage
+    ContentModels.Home home = Model.Content.Site() as ContentModels.Home;
+    var colorTheme = Umbraco.GetPreValueAsString(home.ColorTheme);
+    var font = Umbraco.GetPreValueAsString(home.Font);
+}
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>@Model.Content.Name - @home.Sitename</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="@Url.Content("~/css/umbraco-starterkit-style.css")"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    @RenderSection("Header", required: false)
+</head>
+
+<body class="frontpage theme-font-@font theme-color-@colorTheme">
+    @*<div class="mobile-nav">
+        <nav class="nav-bar">
+            @Html.Partial("~/views/partials/navigation/topNavigation.cshtml")
+        </nav>
+    </div>
+
+    <header class="header">
+
+        <div class="logo">
+            @if (home.SiteLogo != null && !string.IsNullOrEmpty(home.SiteLogo.Url))
+            {
+                <div class="nav-link--home">
+                    <img class="logo-image" src="@home.SiteLogo.Url" alt="@home.Sitename">
+                </div>
+            }
+            else
+            {
+                <a class="nav-link nav-link--home nav-link--home__text logo-text" href="/">@home.Sitename</a>
+            }
+        </div>
+
+        <nav class="nav-bar top-nav">
+            @Html.Partial("~/Views/Partials/Navigation/TopNavigation.cshtml")
+        </nav>
+
+        <div class="mobile-nav-handler">
+            <div class="hamburger lines" id="toggle-nav">
+                <span></span>
+            </div>
+        </div>
+    </header>*@
+
+<main>
+    <!-- BEGIN MCTS SAMPLE CODE -->
+    <div class="mcts-container">
+        <div class="heading">
+            <div class="container">
+                <div class="col-md-2">
+                    <img src="/Content/marathon-logo-white.png" />
+                </div>
+                <div class="col-md-10" style="text-align: right;">
+                    <div class="mcts-title">MCTS - Progress Tracking w/ SignalR</div>
+                </div>
+            </div>
+        </div>
+        <div class="notification progress-notification info" role="alert" aria-live="assertive">
+            <div class="row">
+                <div class="progress-message">&nbsp;</div>
+            </div>
+
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="0"
+                     aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                </div>
+            </div>
+
+            <div class="button-container">
+                <a id="showProgress" class="btn btn-default">Show Progress</a>
+            </div>
+        </div>
+        <div class="chuck-container">
+            <div class="joke">
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- END MCTS SAMPLE CODE -->
+    @RenderBody()
+</main>
+
+    @*<footer class="section--themed">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ta-center">
+                    @home.FooterAddress
+                </div>
+            </div>
+        </div>
+    </footer>*@
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/mvc/5.2.3/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/jquery.signalR-2.2.2.js"></script>
+    <script language="javascript" src="/signalr/hubs"></script>
+    <script src="/Scripts/SignalrHubs/ProgressHub.js"></script>
+    <script src="/Scripts/SignalrHubs/GroupProgressHub.js"></script>
+    <script src="@Url.Content("~/scripts/umbraco-starterkit-app.js")"></script>
+</body>
+
+</html>

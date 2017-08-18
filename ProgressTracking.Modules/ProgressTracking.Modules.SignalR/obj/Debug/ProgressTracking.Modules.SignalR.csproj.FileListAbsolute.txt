@@ -1,0 +1,10 @@
+C:\projects\MCTS-SignarR-ProgressTracking\MCTS-SignalR-ProgressTracking\ProgressTracking.Modules\ProgressTracking.Modules.SignalR\bin\Debug\ProgressTracking.Modules.SignalR.dll
+C:\projects\MCTS-SignarR-ProgressTracking\MCTS-SignalR-ProgressTracking\ProgressTracking.Modules\ProgressTracking.Modules.SignalR\bin\Debug\ProgressTracking.Modules.SignalR.pdb
+C:\projects\MCTS-SignarR-ProgressTracking\MCTS-SignalR-ProgressTracking\ProgressTracking.Modules\ProgressTracking.Modules.SignalR\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+C:\projects\MCTS-SignarR-ProgressTracking\MCTS-SignalR-ProgressTracking\ProgressTracking.Modules\ProgressTracking.Modules.SignalR\bin\Debug\Newtonsoft.Json.dll
+C:\projects\MCTS-SignarR-ProgressTracking\MCTS-SignalR-ProgressTracking\ProgressTracking.Modules\ProgressTracking.Modules.SignalR\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+C:\projects\MCTS-SignarR-ProgressTracking\MCTS-SignalR-ProgressTracking\ProgressTracking.Modules\ProgressTracking.Modules.SignalR\obj\Debug\ProgressTracking.Modules.SignalR.csprojResolveAssemblyReference.cache
+C:\projects\MCTS-SignarR-ProgressTracking\MCTS-SignalR-ProgressTracking\ProgressTracking.Modules\ProgressTracking.Modules.SignalR\obj\Debug\ProgressTracking.Modules.SignalR.dll
+C:\projects\MCTS-SignarR-ProgressTracking\MCTS-SignalR-ProgressTracking\ProgressTracking.Modules\ProgressTracking.Modules.SignalR\obj\Debug\ProgressTracking.Modules.SignalR.pdb
+C:\projects\MCTS-SignarR-ProgressTracking\MCTS-SignalR-ProgressTracking\ProgressTracking.Modules\ProgressTracking.Modules.SignalR\bin\Debug\ProgressTracking.Modules.SignalR.dll.config
+C:\projects\MCTS-SignarR-ProgressTracking\MCTS-SignalR-ProgressTracking\ProgressTracking.Modules\ProgressTracking.Modules.SignalR\bin\Debug\Newtonsoft.Json.xml
